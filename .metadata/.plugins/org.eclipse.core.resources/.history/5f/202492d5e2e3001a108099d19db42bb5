@@ -1,0 +1,36 @@
+import java.sql.*;  
+public class ReadsTableMatadata {
+
+	public static void main(String[] args) {
+
+		
+		
+		String sql = "CREATE TABLE TEST2(ID NUMBER,FIRSTNAME VARCHAR2(90))";
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","system","system");
+		Statement stmt = con.createStatement();
+		stmt.execute(sql);
+		System.out.println("done");
+		
+		
+		
+		
+		
+		
+//		try{  
+//		Class.forName("com.mysql.jdbc.Driver");  
+//		Connection con=DriverManager.getConnection(  
+//		"jdbc:mysql://localhost:3306/Brainy","root","123456");  
+//		
+//		Statement stmt=con.createStatement();  
+//		ResultSet rs=stmt.executeQuery("select * from Persons");  
+//		while(rs.next())  
+//		System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));  
+//		con.close();  
+//		}
+//		catch(Exception e){ System.out.println(e);}  
+		
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+
+import org.json.JSONArray;
+import org.json.simple.JSONObject;
+
+public class CreateJSON {
+
+	public static void main(String[] args) {
+		
+		JSONObject j = new JSONObject();
+		j.put("name", "anuj");
+		j.put("age", 10);
+		JSONArray preview = new JSONArray();
+		preview.add("student");
+		preview.add("ta");
+		preview.add("cook");
+		
+	
+	}
+}
